@@ -40,10 +40,10 @@ The MSTest framework supports unit testing in Visual Studio. Use the classes and
 | Assert.IsFalse(_isThereEnoughFuel); | Tests whether the specified condition is false  |
 | Assert.IsNull(_actualInitialClaim); | Tests whether the specified object is null  |
 | Assert.IsNotNull(_actualInitialClaim); | Tests whether the specified object is non-null  |
-| Assert.IsInstanceOfType(_actualInitialClaim, typeof(dummyClaim9InitialClaim)); | Tests whether the specified object is an instance of the expected type  |
+| Assert.IsInstanceOfType(_actualInitialClaim, typeof(dummyClaimInitialClaim)); | Tests whether the specified object is an instance of the expected type  |
 | Assert.IsNotInstanceOfType(_actualInitialClaim, typeof(dummyClaim9InitialClaim)); | Tests whether the specified object is not an instance of type  |
-| StringAssert.Contains(_expectedBellatrixTitle, "Karen"); | Tests whether the specified string contains the specified substring  |
-| StringAssert.StartsWith(_expectedBellatrixTitle, "Karen"); | Tests whether the specified string begins with the specified substring  |
+| StringAssert.Contains(_expectedKarenTitle, "Karen"); | Tests whether the specified string contains the specified substring  |
+| StringAssert.StartsWith(_expectedKarenTitle, "Karen"); | Tests whether the specified string begins with the specified substring  |
 | StringAssert.Matches("(281)388-0388", @"(?d{3})?-? *d{3}-? *-?d{4}");  | Tests whether the specified string matches a regular expression  |
 | StringAssert.DoesNotMatch("281)388-0388", @"(?d{3})?-? *d{3}-? *-?d{4}");  | Tests whether the specified string does not match a regular expression |
 | CollectionAssert.AreEqual(_expectedInitialClaims, _actualInitialClaims);  | Tests whether the specified collections have the same elements in the same order and quantity.  |
