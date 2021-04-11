@@ -18,6 +18,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseNetCoreClassProject", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseNetCoreSqlClientClassProject", "BaseNetCoreSqlClientClassProject\BaseNetCoreSqlClientClassProject.csproj", "{E97C796F-CED7-4C0B-BB36-02FF9D8EC55A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Console project net core 5", "Console project net core 5", "{7865A25F-FC73-4912-A908-9F8F489AB358}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseNetCoreConsoleProject", "BaseNetCoreConsoleProject\BaseNetCoreConsoleProject.csproj", "{C95FCCB7-B487-4451-9485-476C75F88928}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,6 +40,10 @@ Global
 		{E97C796F-CED7-4C0B-BB36-02FF9D8EC55A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E97C796F-CED7-4C0B-BB36-02FF9D8EC55A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E97C796F-CED7-4C0B-BB36-02FF9D8EC55A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C95FCCB7-B487-4451-9485-476C75F88928}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C95FCCB7-B487-4451-9485-476C75F88928}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C95FCCB7-B487-4451-9485-476C75F88928}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C95FCCB7-B487-4451-9485-476C75F88928}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -44,6 +52,7 @@ Global
 		{A9D63D1B-D3B7-4B81-9314-59DA55A78BC6} = {474F2AFE-597E-47BF-B193-846C86D055EA}
 		{80A7E66D-47C5-4012-BE4E-2B3938D4250C} = {2FAA48D6-24D0-44CA-97E4-207CF009CD04}
 		{E97C796F-CED7-4C0B-BB36-02FF9D8EC55A} = {2FAA48D6-24D0-44CA-97E4-207CF009CD04}
+		{C95FCCB7-B487-4451-9485-476C75F88928} = {7865A25F-FC73-4912-A908-9F8F489AB358}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9ED3C544-A7B1-47DF-ACC1-EB578BCE69E4}
