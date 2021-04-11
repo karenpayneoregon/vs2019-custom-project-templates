@@ -53,7 +53,7 @@ namespace PayneUnitTestProject
         /// </summary>
         /// <param name="testContext"></param>
         [ClassInitialize()]
-        public static void MyClassInitialize(TestContext testContext)
+        public static void ClassInitialize(TestContext testContext)
         {
             TestResults = new List<TestContext>();
         }
