@@ -1,1 +1,0 @@
-﻿This folder is for unit test events, mocking data and other code to have good unit test.
