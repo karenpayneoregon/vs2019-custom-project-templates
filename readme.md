@@ -5,3 +5,14 @@
 - For the developer who exported the template, the template is immediately available. Suggest pinning the project template to the projection selection in the start window,
 
 C:\Users\\**UserName**\\Documents\Visual Studio 2019\My Exported Templates
+
+# Included templates
+
+| Project  |  Description  |
+| :---         |  :---  |
+| BaseNetCoreClassProject  | .NET Core 5 using C# 9   |
+| BaseNetCoreSqlClientClassProject  | .NET Core 5 using C# 9  with SqlClient |
+| PayneUnitTestProject  | .NET Core 5 using C# 9  base unit test setup |
+
+![image](assets/core_csharp_shield.png)
+
