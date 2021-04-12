@@ -26,6 +26,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BaseNetCoreOracleProviderCl
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BaseNetCoreAppConfigProject", "BaseNetCoreAppConfigProject\BaseNetCoreAppConfigProject.csproj", "{F6FE2BB5-BBC8-4417-B6D0-38E0760F836B}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BaseNetCoreConfigurationHelper", "BaseNetCoreConfigurationHelper\BaseNetCoreConfigurationHelper.csproj", "{F5006C9C-B0B9-4759-9D0B-291AE869C3A4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -56,6 +58,10 @@ Global
 		{F6FE2BB5-BBC8-4417-B6D0-38E0760F836B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F6FE2BB5-BBC8-4417-B6D0-38E0760F836B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F6FE2BB5-BBC8-4417-B6D0-38E0760F836B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5006C9C-B0B9-4759-9D0B-291AE869C3A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5006C9C-B0B9-4759-9D0B-291AE869C3A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5006C9C-B0B9-4759-9D0B-291AE869C3A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5006C9C-B0B9-4759-9D0B-291AE869C3A4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -67,6 +73,7 @@ Global
 		{C95FCCB7-B487-4451-9485-476C75F88928} = {7865A25F-FC73-4912-A908-9F8F489AB358}
 		{C39E0FEE-5A9D-4DB1-AC28-15B397416BAA} = {2FAA48D6-24D0-44CA-97E4-207CF009CD04}
 		{F6FE2BB5-BBC8-4417-B6D0-38E0760F836B} = {2FAA48D6-24D0-44CA-97E4-207CF009CD04}
+		{F5006C9C-B0B9-4759-9D0B-291AE869C3A4} = {2FAA48D6-24D0-44CA-97E4-207CF009CD04}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9ED3C544-A7B1-47DF-ACC1-EB578BCE69E4}
