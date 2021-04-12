@@ -2,6 +2,8 @@
 
 A repository for base projects for .NET 5, C#9 which can be exported as templates and used from Visual Studio `start window`.
 
+Several projects require NuGet packages which can be fixed by running `NuGet restore packages`.
+
 :bulb: Pin the ones used often in the `start window`
 
 - Templates are place in the following folder. To share, give the .zip file to another developer and they drop the file in their Export folder.

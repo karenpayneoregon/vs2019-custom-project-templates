@@ -1,14 +1,10 @@
 ﻿using System;
-using System.Data.SqlClient;
 using System.Threading;
 using System.Threading.Tasks;
+using Oracle.ManagedDataAccess.Client;
 
-namespace BaseNetCoreSqlClientClassProject.Classes
+namespace BaseNetCoreOracleProviderClassProject.Classes
 {
-    /// <summary>
-    /// Base code to get started
-    /// * BaseExceptionProperties is optional, alternate would be a named value tuple
-    /// </summary>
     public class DataOperations : BaseExceptionProperties
     {
         /// <summary>
@@ -26,22 +22,22 @@ namespace BaseNetCoreSqlClientClassProject.Classes
         public static async Task<bool> Read(CancellationToken ct)
         {
             mHasException = false;
-            
+
             const string SelectStatement = "TODO";
-            
+
             // ReSharper disable once MethodSupportsCancellation
             return await Task.Run(async () =>
             {
-                await using var cn = new SqlConnection(ConnectionString);
-                await using var cmd = new SqlCommand { Connection = cn, CommandText = SelectStatement };
+                await using var cn = new OracleConnection(ConnectionString);
+                await using var cmd = new OracleCommand { Connection = cn, CommandText = SelectStatement };
 
                 try
                 {
                     await cn.OpenAsync(ct);
-                    
+
                     // ReSharper disable once MethodSupportsCancellation
                     var reader = await cmd.ExecuteReaderAsync();
-                    
+
                     return true;
                 }
                 catch (Exception exception)
