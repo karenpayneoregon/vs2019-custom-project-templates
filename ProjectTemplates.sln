@@ -14,15 +14,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Class project templates net core 5", "Class project templates net core 5", "{2FAA48D6-24D0-44CA-97E4-207CF009CD04}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseNetCoreClassProject", "BaseNetCoreClassProject\BaseNetCoreClassProject.csproj", "{80A7E66D-47C5-4012-BE4E-2B3938D4250C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BaseNetCoreClassProject", "BaseNetCoreClassProject\BaseNetCoreClassProject.csproj", "{80A7E66D-47C5-4012-BE4E-2B3938D4250C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseNetCoreSqlClientClassProject", "BaseNetCoreSqlClientClassProject\BaseNetCoreSqlClientClassProject.csproj", "{E97C796F-CED7-4C0B-BB36-02FF9D8EC55A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BaseNetCoreSqlClientClassProject", "BaseNetCoreSqlClientClassProject\BaseNetCoreSqlClientClassProject.csproj", "{E97C796F-CED7-4C0B-BB36-02FF9D8EC55A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Console project net core 5", "Console project net core 5", "{7865A25F-FC73-4912-A908-9F8F489AB358}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseNetCoreConsoleProject", "BaseNetCoreConsoleProject\BaseNetCoreConsoleProject.csproj", "{C95FCCB7-B487-4451-9485-476C75F88928}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BaseNetCoreConsoleProject", "BaseNetCoreConsoleProject\BaseNetCoreConsoleProject.csproj", "{C95FCCB7-B487-4451-9485-476C75F88928}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseNetCoreOracleProviderClassProject", "BaseNetCoreOracleProviderClassProject\BaseNetCoreOracleProviderClassProject.csproj", "{C39E0FEE-5A9D-4DB1-AC28-15B397416BAA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BaseNetCoreOracleProviderClassProject", "BaseNetCoreOracleProviderClassProject\BaseNetCoreOracleProviderClassProject.csproj", "{C39E0FEE-5A9D-4DB1-AC28-15B397416BAA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BaseNetCoreAppConfigProject", "BaseNetCoreAppConfigProject\BaseNetCoreAppConfigProject.csproj", "{F6FE2BB5-BBC8-4417-B6D0-38E0760F836B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -50,6 +52,10 @@ Global
 		{C39E0FEE-5A9D-4DB1-AC28-15B397416BAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C39E0FEE-5A9D-4DB1-AC28-15B397416BAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C39E0FEE-5A9D-4DB1-AC28-15B397416BAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6FE2BB5-BBC8-4417-B6D0-38E0760F836B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6FE2BB5-BBC8-4417-B6D0-38E0760F836B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6FE2BB5-BBC8-4417-B6D0-38E0760F836B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6FE2BB5-BBC8-4417-B6D0-38E0760F836B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -60,6 +66,7 @@ Global
 		{E97C796F-CED7-4C0B-BB36-02FF9D8EC55A} = {2FAA48D6-24D0-44CA-97E4-207CF009CD04}
 		{C95FCCB7-B487-4451-9485-476C75F88928} = {7865A25F-FC73-4912-A908-9F8F489AB358}
 		{C39E0FEE-5A9D-4DB1-AC28-15B397416BAA} = {2FAA48D6-24D0-44CA-97E4-207CF009CD04}
+		{F6FE2BB5-BBC8-4417-B6D0-38E0760F836B} = {2FAA48D6-24D0-44CA-97E4-207CF009CD04}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9ED3C544-A7B1-47DF-ACC1-EB578BCE69E4}
