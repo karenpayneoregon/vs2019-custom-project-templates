@@ -7,6 +7,12 @@ Provides read/write methods to app.config
 
 ![img](assets/core_csharp_shield.png)
 
+# Nuget package
+
+[System.Configuration.ConfigurationManager](https://www.nuget.org/packages/System.Configuration.ConfigurationManager/6.0.0-preview.3.21201.4)
+
+> Install-Package System.Configuration.ConfigurationManager -Version 6.0.0-preview.3.21201.4
+
 # ApplicationSettings class
 
 |Method | Description   |
