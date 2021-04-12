@@ -12,8 +12,8 @@ Provides read/write methods to app.config
 |Method | Description   |
 | :---         |  :---  |
 |GetSettingAsString(string configKey)| Get app setting as string from application file|
-|GetSettingAsInt|Get app setting as int from application file|
-|SetValue| Set value by key|
+|GetSettingAsInt(string configKey)|Get app setting as int from application file|
+|SetValue(string key, string value)| Set value by key|
 |Reload| Refresh appSettings|
 |Fetch| Start fresh reading settings|
 
