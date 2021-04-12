@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
 using BaseNetCoreConfigurationHelper.Classes;
 using Microsoft.Extensions.Configuration;
 using Environment = BaseNetCoreConfigurationHelper.Classes.Environment;
@@ -63,11 +64,21 @@ namespace BaseNetCoreConfigurationHelper
         /// </summary>
         public static string GetConnectionString()
         {
-            return InitMainConfiguration()
-                .GetConnectionString(InitOptions<Environment>("Environment").Production ?
+            return InitMainConfiguration().GetConnectionString(InitOptions<Environment>("Environment").Production ?
                     "ProductionConnection" :
                     "DevelopmentConnection");
         }
+
+        private static void LoadDevelopmentConnectionString()
+        {
+            throw new NotImplementedException();
+        }
+
+        private static void LoadProductionConnectionString()
+        {
+            throw new NotImplementedException();
+        }
+
         /// <summary>
         /// Initialize ConfigurationBuilder for appsettings
         /// </summary>
