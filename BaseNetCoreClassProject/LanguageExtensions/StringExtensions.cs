@@ -19,6 +19,15 @@ namespace BaseNetCoreClassProject.LanguageExtensions
         /// <returns>true if empty or false if not empty</returns>
         [DebuggerStepThrough]
         public static bool IsNullOrWhiteSpace(this string sender) => string.IsNullOrWhiteSpace(sender);
+
+        /// <summary>
+        /// Determine if string is empty
+        /// </summary>
+        /// <param name="sender">String to test if null or whitespace</param>
+        /// <returns>true if not or false if empty</returns>
+        [DebuggerStepThrough]
+        public static bool IsNotNullOrWhiteSpace(this string sender) => !string.IsNullOrWhiteSpace(sender);
+
         /// <summary>
         /// Determine if a string can be represented as a numeric.
         /// </summary>
