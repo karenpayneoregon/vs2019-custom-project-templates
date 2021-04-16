@@ -31,7 +31,7 @@ C:\Users\\**UserName**\\Documents\Visual Studio 2019\My Exported Templates
 
 <table>
 	<tr style="background-color:#33CC00;color:white">
-		<td>Each project template in many cases may have more than needed such as a readme file. If not needed simply remove these files</td>
+		<td>Each `project template `in many cases may have more than needed such as a readme file. If not needed simply remove these files</td>
 	</tr>
 </table>
 
