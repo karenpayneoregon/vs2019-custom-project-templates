@@ -26,6 +26,7 @@ C:\Users\\**UserName**\\Documents\Visual Studio 2019\My Exported Templates
 | BaseNetCoreAppConfigProject | .NET Core 5 C#9 base class project for appconfig |
 | BaseNetCoreFormsProject | .NET Core 5 C#9 base forms project |
 | BaseNetCoreConsoleProject | .NET Core 5 C#9 base console project |
+| BaseNetCoreClassNewtonsoftProject | .NET Core 5 C#9 class project for json.net |
 
 </br>
 
