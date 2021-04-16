@@ -1,3 +1,5 @@
+<link href="styles/markdown.css" rel="stylesheet"></link>
+
 # Information
 
 A repository for base projects for .NET 5, C#9 which can be exported as templates and used from Visual Studio `start window`.
@@ -30,12 +32,19 @@ C:\Users\\**UserName**\\Documents\Visual Studio 2019\My Exported Templates
 </br>
 
 <table>
-	<tr style="background-color:#33CC00;color:white">
-		<td>Each `project template `in many cases may have more than needed such as a readme file. If not needed simply remove these files</td>
+	<tr>
+		<td>Each project template in many cases may have more than needed such as a readme file. If not needed simply remove these files</td>
 	</tr>
 </table>
 
 </br>
+
+<table><tr><td>
+<pre>
+**Hello**,
+<p><em>world</em>.
+</pre></p>
+</td></tr></table>
 
 ![image](assets/core_csharp_shield.png)
 

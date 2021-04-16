@@ -9,6 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PayneUnitTestProject", "Pay
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6B396C35-D280-46C6-9252-4D1132C49A09}"
 	ProjectSection(SolutionItems) = preProject
+		markdown.css = markdown.css
 		readme.md = readme.md
 	EndProjectSection
 EndProject
@@ -32,7 +33,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShouldlyUnitTestProject", "
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Windows forms net core csharp 9", "Windows forms net core csharp 9", "{14C7F42D-1F56-4231-B660-1D1DDF6AA76B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseNetCoreFormsProject", "BaseNetCoreFormsProject\BaseNetCoreFormsProject.csproj", "{B15A169F-8AA1-4ABD-B873-5E0F37E58299}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BaseNetCoreFormsProject", "BaseNetCoreFormsProject\BaseNetCoreFormsProject.csproj", "{B15A169F-8AA1-4ABD-B873-5E0F37E58299}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "styles", "styles", "{5CF787F6-9FA7-4978-A196-4FEA69253ABB}"
+	ProjectSection(SolutionItems) = preProject
+		markdown.css = markdown.css
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
