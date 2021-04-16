@@ -31,7 +31,7 @@ C:\Users\\**UserName**\\Documents\Visual Studio 2019\My Exported Templates
 
 <table>
 	<tr>
-		<td>Each project template in many cases may have more than needed such as a readme file. If not needed simply remove these files</td>
+		<td>&mdash;<strong>Note</strong>&mdash;</br>Each project template in many cases may have more than needed such as a readme file. If not needed simply remove these files</td>
 	</tr>
 </table>
 
