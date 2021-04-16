@@ -2,7 +2,7 @@
 
 A repository for base projects for .NET 5, C#9 which can be exported as templates and used from Visual Studio `start window`.
 
-Several projects require NuGet packages which can be fixed by running `NuGet restore packages`.
+Several projects require NuGet packages which can be fixed by running [NuGet restore packages](https://docs.microsoft.com/en-us/nuget/consume-packages/package-restore).
 
 :bulb: Pin the ones used often in the `start window`
 
