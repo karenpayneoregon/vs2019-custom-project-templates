@@ -1,5 +1,3 @@
-<link href="styles/markdown.css" rel="stylesheet"></link>
-
 # Information
 
 A repository for base projects for .NET 5, C#9 which can be exported as templates and used from Visual Studio `start window`.
