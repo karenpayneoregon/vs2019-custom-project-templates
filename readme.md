@@ -39,12 +39,7 @@ C:\Users\\**UserName**\\Documents\Visual Studio 2019\My Exported Templates
 
 </br>
 
-<table><tr><td>
-<pre>
-**Hello**,
-<p><em>world</em>.
-</pre></p>
-</td></tr></table>
+
 
 ![image](assets/core_csharp_shield.png)
 
