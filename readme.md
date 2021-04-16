@@ -27,7 +27,13 @@ C:\Users\\**UserName**\\Documents\Visual Studio 2019\My Exported Templates
 | BaseNetCoreFormsProject | .NET Core 5 C#9 base forms project |
 | BaseNetCoreConsoleProject | .NET Core 5 C#9 base console project |
 
+</br>
 
+<table>
+	<tr style="background-color:#33CC00;color:white">
+		<td>Each project template in many cases may have more than needed such as a readme file. If not needed simply remove these files</td>
+	</tr>
+</table>
 
 </br>
 
