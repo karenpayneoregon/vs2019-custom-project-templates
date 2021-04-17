@@ -47,6 +47,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Examples", "Examples", "{E1
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewtonsoftExampleConsole", "NewtonsoftExampleConsole\NewtonsoftExampleConsole.csproj", "{65DF94A8-1DCA-4E28-A3B3-58530CA4E8CD}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WPF net code csharp 9", "WPF net code csharp 9", "{1A5B761B-454E-4CCC-87E0-832D03E06A00}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseNetCoreWpfAppProject", "BaseNetCoreWpfAppProject\BaseNetCoreWpfAppProject.csproj", "{346DE512-6163-453D-A84C-2C1CBE9B8E6C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -97,6 +101,10 @@ Global
 		{65DF94A8-1DCA-4E28-A3B3-58530CA4E8CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{65DF94A8-1DCA-4E28-A3B3-58530CA4E8CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{65DF94A8-1DCA-4E28-A3B3-58530CA4E8CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{346DE512-6163-453D-A84C-2C1CBE9B8E6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{346DE512-6163-453D-A84C-2C1CBE9B8E6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{346DE512-6163-453D-A84C-2C1CBE9B8E6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{346DE512-6163-453D-A84C-2C1CBE9B8E6C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -115,6 +123,7 @@ Global
 		{86B0E530-7DF7-45E1-8DCE-003AAF5305B5} = {7A00F745-84B1-456A-A12D-F4678B9248C7}
 		{E1AA5B64-0FA3-4326-9AE7-80A047D8FF50} = {7A00F745-84B1-456A-A12D-F4678B9248C7}
 		{65DF94A8-1DCA-4E28-A3B3-58530CA4E8CD} = {E1AA5B64-0FA3-4326-9AE7-80A047D8FF50}
+		{346DE512-6163-453D-A84C-2C1CBE9B8E6C} = {1A5B761B-454E-4CCC-87E0-832D03E06A00}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9ED3C544-A7B1-47DF-ACC1-EB578BCE69E4}

@@ -105,7 +105,5 @@ namespace BaseNetCoreConfigurationHelper
             var config = InitMainConfiguration();
             return config.GetSection(section).Get<T>();
         }
-
-
     }
 }
