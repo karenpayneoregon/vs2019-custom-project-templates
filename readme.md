@@ -30,6 +30,7 @@ C:\Users\\**UserName**\\Documents\Visual Studio 2019\My Exported Templates
 | BaseNetCoreClassNewtonsoftProject | .NET Core 5 C#9 class project for json.net |
 | BaseValidationLibrary | .NET Core 5 C#9 class project for [data annotations](https://docs.microsoft.com/en-us/aspnet/mvc/overview/older-versions-1/models-data/validation-with-the-data-annotation-validators-cs) |
 | BaseNetCoreFileHelpers | .NET Core 5 C#9 class project for file operations **work in progress** |
+| BaseNetCoreImagesProject | .NET Core 5 C#9 class project for image conversions  |
 
 </br>
 
