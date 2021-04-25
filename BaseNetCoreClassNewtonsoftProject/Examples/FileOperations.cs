@@ -23,6 +23,19 @@ namespace BaseNetCoreClassNewtonsoftProject.Examples
             return driversLicenses;
         }
 
+        public static DownloadedData ReadMusicResults(string fileName = "lookup.json")
+        {
+            DownloadedData musicResultsList = new();
+
+            if (!File.Exists(fileName)) return musicResultsList;
+
+            var json = File.ReadAllText(fileName);
+            musicResultsList = JsonConvert.DeserializeObject<DownloadedData>(json);
+
+            return musicResultsList;
+
+        }
+
         public static string GetRawData(string fileName) => File.ReadAllText(fileName);
 
         public static void DriversLicenseAsJson(List<DriversLicense> driversLicenseList, string fileName)

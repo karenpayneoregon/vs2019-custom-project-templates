@@ -11,6 +11,13 @@ namespace NewtonsoftExampleConsole
     {
         static void Main(string[] args)
         {
+
+            var query = FileOperations
+                .ReadMusicResults()
+                .results.trackmatches.track
+                .Where(track => track.artist == "Post Malone").ToList();
+            
+            
             var fileName = "driversLicenses.json";
             var licenseList = FileOperations.ReadLicenses(fileName);
             

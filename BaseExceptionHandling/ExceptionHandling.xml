@@ -1,0 +1,166 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ExceptionHandling</name>
+    </assembly>
+    <members>
+        <member name="T:ExceptionHandling.Classes.Exceptions">
+            <summary>
+            Provides writing run time exceptions to a text file
+            </summary>
+            <remarks>
+            What's here works while there will be many modifications later on.
+            </remarks>
+        </member>
+        <member name="M:ExceptionHandling.Classes.Exceptions.Write(System.Exception,ExceptionHandling.ExceptionLogType)">
+            <summary>
+            Write Exception information to UnhandledException.txt in the executable folder.
+            </summary>
+            <param name="exception">Strong typed <seealso cref="T:System.Exception"/></param>
+            <param name="exceptionLogType">
+            Type of exception which determines which file to log to. Not passing this parameter
+            will default to the general log file
+            </param>
+        </member>
+        <member name="M:ExceptionHandling.Classes.Exceptions.ToLogString(System.Exception,System.String)">
+            <summary>
+             Provides full stack trace for the exception that occurred.
+            </summary>
+            <param name="exception">Exception object.</param>
+            <param name="environmentStackTrace">Environment stack trace, for pulling additional stack frames.</param>
+            <returns>Formatted exception with stack trace</returns>
+        </member>
+        <member name="M:ExceptionHandling.Classes.Exceptions.GetStackTraceLines(System.String)">
+            <summary>
+             Gets a list of stack frame lines, as strings.
+            </summary>
+            <param name="stackTrace">Stack trace string.</param>
+            <returns>Stack trace lines</returns>
+        </member>
+        <member name="M:ExceptionHandling.Classes.Exceptions.GetUserStackTraceLines(System.String)">
+            <summary>
+             Gets a list of stack frame lines, as strings, only including those for which line number is known.
+            </summary>
+            <param name="fullStackTrace">Full stack trace, including external code.</param>
+            <returns>Stack trace lines</returns>
+        </member>
+        <member name="F:ExceptionHandling.ExceptionLogType.General">
+            <summary>
+            Common exceptions
+            </summary>
+        </member>
+        <member name="T:ExceptionHandling.Helpers.Extensions">
+            <summary>
+            Enum extensions 
+            </summary>
+        </member>
+        <member name="M:ExceptionHandling.Helpers.Extensions.ToEnum``1(System.String,``0)">
+            <summary>
+            Convert a string value to an enum member
+            </summary>
+            <typeparam name="TEnum">Enum to base conversion too</typeparam>
+            <param name="enumValue">Valid enum member for TEnum</param>
+            <param name="defaultValue">Default member value if conversion can not be performed</param>
+            <returns></returns>
+        </member>
+        <member name="T:ExceptionHandling.ExceptionExtensions">
+            <summary>
+            Helper methods for logging exceptions
+            </summary>
+        </member>
+        <member name="M:ExceptionHandling.ExceptionExtensions.GetExceptionMessages(System.Exception,System.String)">
+            <summary>
+            Get InnerException if there is one as text.
+            </summary>
+            <param name="e"><see cref="T:System.Exception"/></param>
+            <param name="result">Exception message</param>
+            <returns></returns>
+        </member>
+        <member name="T:ExceptionHandling.LogClasses.LogContainer">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ExceptionHandling.LogClasses.LogContainer.LoggerEntry">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ExceptionHandling.LogClasses.LogContainer.Lines">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ExceptionHandling.LogClasses.LogContainer.#ctor">
+            <summary>
+            Instantiate <see cref="P:ExceptionHandling.LogClasses.LogContainer.Lines"/> as a new list
+            </summary>
+        </member>
+        <member name="P:ExceptionHandling.LogClasses.LogContainer.ItemArray">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:ExceptionHandling.LogClasses.LogManager">
+            <summary>
+            Simple no frills logger to avoid a 3rd party package
+            </summary>
+        </member>
+        <member name="P:ExceptionHandling.LogClasses.LogManager.FileName">
+            <summary>
+            File name to write information into
+            </summary>
+        </member>
+        <member name="M:ExceptionHandling.LogClasses.LogManager.Log(ExceptionHandling.Interfaces.LogLevel,System.String)">
+            <summary>
+            Create or append level and message along with date-time stamp
+            </summary>
+            <param name="level">Type</param>
+            <param name="message">Text to write</param>
+        </member>
+        <member name="T:ExceptionHandling.LogClasses.LogReader">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:ExceptionHandling.LogClasses.LogReader.OnEntryItemsAdded">
+            <summary>
+            
+            </summary>
+            <param name="entry"></param>
+        </member>
+        <member name="E:ExceptionHandling.LogClasses.LogReader.OnEntryAddedEvent">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:ExceptionHandling.LogClasses.LogReader.OnEntryLineAdded">
+            <summary>
+            
+            </summary>
+            <param name="line"></param>
+        </member>
+        <member name="E:ExceptionHandling.LogClasses.LogReader.OnEntryLineAddedEvent">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ExceptionHandling.LogClasses.LogReader.FileName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ExceptionHandling.LogClasses.LogReader.Read">
+            <summary>
+            Read log file into a container along with optionally using
+            events to get at details as read.
+            </summary>
+            <returns>List&lt;LogContainer&gt;</returns>
+        </member>
+        <member name="T:ExceptionHandling.UnhandledExceptions">
+            <summary>
+            Provides events to deal with unhandled runtime exceptions
+            </summary>
+        </member>
+    </members>
+</doc>
