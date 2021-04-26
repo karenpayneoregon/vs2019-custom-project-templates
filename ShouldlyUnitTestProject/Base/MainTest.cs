@@ -1,6 +1,7 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -29,6 +30,7 @@ namespace ShouldlyUnitTestProject
         [TestInitialize]
         public async Task Init()
         {
+            Trace.Listeners.Add(new TextWriterTraceListener(Console.Out));
             if (TestContext.TestName == "TestMethod1")
             {
                 await Task.Delay(0);
@@ -38,6 +40,7 @@ namespace ShouldlyUnitTestProject
         [TestCleanup]
         public void TestCleanup()
         {
+            Trace.Flush();
             if (TestContext.TestName == "TestMethod1")
             {
                 Console.WriteLine($"TestCleanup: {TestContext.TestName}");
