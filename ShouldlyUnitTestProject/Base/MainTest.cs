@@ -12,7 +12,8 @@ namespace ShouldlyUnitTestProject
 {
     public partial class MainTest : IDisposable
     {
-
+        protected List<object> annihilationList;
+        
         public MainTest()
         {
             Console.WriteLine($"New constructor for {nameof(MainTest)}");
@@ -30,6 +31,8 @@ namespace ShouldlyUnitTestProject
         [TestInitialize]
         public async Task Init()
         {
+            annihilationList = new List<object>();
+            
             Trace.Listeners.Add(new TextWriterTraceListener(Console.Out));
             if (TestContext.TestName == "TestMethod1")
             {
@@ -41,6 +44,14 @@ namespace ShouldlyUnitTestProject
         public void TestCleanup()
         {
             Trace.Flush();
+
+            var success = AnnihilateData(annihilationList);
+            
+            if (!success)
+            {
+                // TODO
+            }
+
             if (TestContext.TestName == "TestMethod1")
             {
                 Console.WriteLine($"TestCleanup: {TestContext.TestName}");
@@ -75,6 +86,49 @@ namespace ShouldlyUnitTestProject
         public void Dispose()
         {
             Console.WriteLine($"Disposing at {DateTime.Now:hh:mm:ss:fff}");
+        }
+
+        /// <summary>
+        /// TODO
+        /// </summary>
+        /// <param name="sandboxBackingList"></param>
+        /// <returns></returns>
+        public bool AnnihilateData(List<object> sandboxBackingList)
+        {
+            var exceptions = new List<Exception>();
+
+            return true;
+            
+        }
+
+        /// <summary>
+        /// TODO
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="sandboxEntity"></param>
+        /// <returns></returns>
+        protected T AddSandboxEntity<T>(T sandboxEntity) where T : class
+        {
+            annihilationList.Add(sandboxEntity);
+
+            return sandboxEntity;
+            
+        }
+        /// <summary>
+        /// Gets all objects of the given type that exist in the annihilateList.
+        /// </summary>
+        /// <typeparam name="T">The type of objects to return</typeparam>
+        /// <returns></returns>
+        protected IEnumerable<T> GetSandboxEntities<T>()
+        {
+            IEnumerable<T> returnObject = (
+                from item in annihilationList
+                where item.GetType() == typeof(T)
+                select (T)item
+            );
+            
+            return returnObject;
+            
         }
     }
 
