@@ -59,6 +59,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BaseNetCoreImagesProject", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BaseExceptionHandling", "BaseExceptionHandling\BaseExceptionHandling.csproj", "{16252A42-A0E5-4A12-8217-917D23190EB7}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Windows forms .net classic", "Windows forms .net classic", "{6BC2C7EF-8BA0-4824-9014-0634C48A15AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseWindowsFormsClassic", "BaseWindowsFormsClassic\BaseWindowsFormsClassic.csproj", "{FAB713F1-8C0E-4A65-BFD8-AFAEE2490A59}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -129,6 +133,10 @@ Global
 		{16252A42-A0E5-4A12-8217-917D23190EB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{16252A42-A0E5-4A12-8217-917D23190EB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{16252A42-A0E5-4A12-8217-917D23190EB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FAB713F1-8C0E-4A65-BFD8-AFAEE2490A59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAB713F1-8C0E-4A65-BFD8-AFAEE2490A59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAB713F1-8C0E-4A65-BFD8-AFAEE2490A59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAB713F1-8C0E-4A65-BFD8-AFAEE2490A59}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -152,6 +160,7 @@ Global
 		{FF53D870-7AFA-4D32-985D-3DB10B05D969} = {2FAA48D6-24D0-44CA-97E4-207CF009CD04}
 		{A6A9D426-E8D6-4163-9D41-F0E2F3916A1D} = {2FAA48D6-24D0-44CA-97E4-207CF009CD04}
 		{16252A42-A0E5-4A12-8217-917D23190EB7} = {2FAA48D6-24D0-44CA-97E4-207CF009CD04}
+		{FAB713F1-8C0E-4A65-BFD8-AFAEE2490A59} = {6BC2C7EF-8BA0-4824-9014-0634C48A15AD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9ED3C544-A7B1-47DF-ACC1-EB578BCE69E4}

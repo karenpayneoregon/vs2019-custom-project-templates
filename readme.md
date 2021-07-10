@@ -25,6 +25,7 @@ C:\Users\\**UserName**\\Documents\Visual Studio 2019\My Exported Templates
 || Using [Shouldly library](https://github.com/shouldly/shouldly/tree/master/documentation) |
 | BaseNetCoreAppConfigProject | .NET Core 5 C#9 base class project for appconfig |
 | BaseNetCoreFormsProject | .NET Core 5 C#9 base forms project |
+|  BaseWindowsFormsClassic| .NET 4.8 C#9 base forms project |
 | BaseNetCoreWpfAppProject | .NET Core 5 C#9 base wpf project |
 | BaseNetCoreConsoleProject | .NET Core 5 C#9 base console project |
 | BaseNetCoreClassNewtonsoftProject | .NET Core 5 C#9 class project for json.net |
@@ -42,7 +43,10 @@ C:\Users\\**UserName**\\Documents\Visual Studio 2019\My Exported Templates
 
 </br>
 
+### See also
 
+- [.NET Boxed Project](https://github.com/Dotnet-Boxed/Templates) templates with batteries included, providing the minimum amount of code required to get you going.
+- [Application templates](https://github.com/thangchung/awesome-dotnet-core#application-templates)
 
 ![image](assets/core_csharp_shield.png)
 
