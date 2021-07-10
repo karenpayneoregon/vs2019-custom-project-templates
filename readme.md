@@ -25,7 +25,7 @@ C:\Users\\**UserName**\\Documents\Visual Studio 2019\My Exported Templates
 || Using [Shouldly library](https://github.com/shouldly/shouldly/tree/master/documentation) |
 | BaseNetCoreAppConfigProject | .NET Core 5 C#9 base class project for appconfig |
 | BaseNetCoreFormsProject | .NET Core 5 C#9 base forms project |
-|  BaseWindowsFormsClassic| .NET 4.8 C#9 base forms project |
+|  BaseWindowsFormsClassic| .NET 4.8 C# base forms project |
 | BaseNetCoreWpfAppProject | .NET Core 5 C#9 base wpf project |
 | BaseNetCoreConsoleProject | .NET Core 5 C#9 base console project |
 | BaseNetCoreClassNewtonsoftProject | .NET Core 5 C#9 class project for json.net |
