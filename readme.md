@@ -27,6 +27,7 @@ The [following repository](https://github.com/karenpayneoregon/class-utilities/t
 | BaseNetCoreSqlClientClassProject  | .NET Core 5 using C#9  with SqlClient |
 | BaseNetCoreOracleProviderClassProject  | .NET Core 5 using C#9  with Oracle |
 | BaseNetCoreConfigurationHelper  | .NET Core 5 using C#9  appsettings.json helpers |
+| BaseNorthWindCoreLibrary  | Starter project for EF Core 5 - NorthWind database |
 | PayneUnitTestProject  | .NET Core 5 using C#9  base unit test setup |
 | ShouldlyUnitTestProject | .NET Core 5 using C#9  base unit test setup|
 || Using [Shouldly library](https://github.com/shouldly/shouldly/tree/master/documentation) |
