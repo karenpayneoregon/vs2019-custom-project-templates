@@ -25,10 +25,7 @@ namespace BaseNetCoreFileHelpers
 
 			if (!directoryInfo.Exists)
 			{
-				if (OnTraverseEvent != null)
-                {
-                    OnTraverseEvent("Nothing to process");
-                }
+                OnTraverseEvent?.Invoke("Nothing to process");
 
                 return;
 			}
@@ -36,17 +33,11 @@ namespace BaseNetCoreFileHelpers
 			if (!excludeFileExtensions.Any(directoryInfo.FullName.Contains))
 			{
 				await Task.Delay(1);
-				if (OnTraverseEvent != null)
-                {
-                    OnTraverseEvent(directoryInfo.FullName);
-                }
+                OnTraverseEvent?.Invoke(directoryInfo.FullName);
             }
 			else
-			{
-				if (OnTraverseExcludeFolderEvent != null)
-                {
-                    OnTraverseExcludeFolderEvent(directoryInfo.FullName);
-                }
+            {
+                OnTraverseExcludeFolderEvent?.Invoke(directoryInfo.FullName);
             }
 
 			DirectoryInfo folder = null;
@@ -64,9 +55,11 @@ namespace BaseNetCoreFileHelpers
 								   {
 
 									   if (OnTraverseExcludeFolderEvent != null)
-										   OnTraverseExcludeFolderEvent($"* {folder.FullName}");
+                                       {
+                                           OnTraverseExcludeFolderEvent($"* {folder.FullName}");
+                                       }
 
-									   continue;
+                                       continue;
 
 								   }
 
@@ -106,12 +99,10 @@ namespace BaseNetCoreFileHelpers
                     }
                 }
 				else
-				{
+                {
+                    OnExceptionEvent?.Invoke(ex);
 
-					if (OnExceptionEvent != null)
-						OnExceptionEvent(ex);
-
-				}
+                }
 			}
 		}
 
@@ -126,7 +117,7 @@ namespace BaseNetCoreFileHelpers
 
 					foreach (string folder in Directory.GetDirectories(path))
 					{
-						Debug.WriteLine($"{new string(' ', indentLevel)}{System.IO.Path.GetFileName(folder)}");
+						Debug.WriteLine($"{new string(' ', indentLevel)}{Path.GetFileName(folder)}");
 						RecursiveFolders(folder, indentLevel + 2);
 					}
 
