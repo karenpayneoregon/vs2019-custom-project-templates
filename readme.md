@@ -12,6 +12,13 @@ Several projects require NuGet packages which can be fixed by running [NuGet res
 
 C:\Users\\**UserName**\\Documents\Visual Studio 2019\My Exported Templates
 
+# Copy local to remote
+
+The [following repository](https://github.com/karenpayneoregon/class-utilities/tree/Changes1) contains a utility useful for copying templates to a developer machine
+
+![img](assets/TemplateUtility.png)
+
+
 # Included templates
 
 | Project  |  Description  |
@@ -45,6 +52,7 @@ C:\Users\\**UserName**\\Documents\Visual Studio 2019\My Exported Templates
 
 ### See also
 
+- [Add tags to project templates](https://docs.microsoft.com/en-us/visualstudio/ide/template-tags?view=vs-2019)
 - [.NET Boxed Project](https://github.com/Dotnet-Boxed/Templates) templates with batteries included, providing the minimum amount of code required to get you going.
 - [Application templates](https://github.com/thangchung/awesome-dotnet-core#application-templates)
 
