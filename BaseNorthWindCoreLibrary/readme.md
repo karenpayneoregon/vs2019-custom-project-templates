@@ -6,6 +6,8 @@ Base class project setup for C#9, .NET Core 5
 - EF Core 4
 - C# 9
 
+![img](../assets/efcore_csharp.png) 
+
 ![image](assets/Versions.png)
 
 ![img](assets/core_csharp_shield.png)
