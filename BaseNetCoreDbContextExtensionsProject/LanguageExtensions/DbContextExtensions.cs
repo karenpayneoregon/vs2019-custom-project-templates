@@ -68,7 +68,8 @@ namespace BaseNetCoreDbContextExtensionsProject.LanguageExtensions
             {
                 var sqlColumn = new SqlColumn() { Name = itemProperty.Name };
 
-                var test = itemProperty.GetColumnType();
+                //itemProperty.GetColumnType();
+                
                 var comment = context.Model.FindEntityType(entityType).FindProperty(itemProperty.Name).GetComment();
 
                 sqlColumn.Description = string.IsNullOrWhiteSpace(comment) ? itemProperty.Name : comment;
@@ -76,8 +77,11 @@ namespace BaseNetCoreDbContextExtensionsProject.LanguageExtensions
                 sqlColumn.IsPrimaryKey = itemProperty.IsKey();
                 sqlColumn.IsForeignKey = itemProperty.IsForeignKey();
                 sqlColumn.IsNullable = itemProperty.IsColumnNullable();
-
+                sqlColumn.TableColumnMappings = itemProperty.GetTableColumnMappings().ToList();
+                sqlColumn.DefaultValue = itemProperty.GetDefaultValueSql();
+                
                 sqlColumn.ClrType = itemProperty.ClrType;
+                
                 sqlColumn.SqlType = itemProperty.GetColumnType();
 
                 sqlColumnsList.Add(sqlColumn);

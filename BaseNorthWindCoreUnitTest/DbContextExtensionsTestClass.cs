@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using BaseNetCoreDbContextExtensionsProject.LanguageExtensions;
 using BaseNetCoreLanguageExtensionsProject.LanguageExtensions;
 using BaseNorthWindCoreLibrary.Data;
+using BaseNorthWindCoreLibrary.Projections;
 using BaseNorthWindCoreUnitTest.Base;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
@@ -66,7 +67,6 @@ namespace BaseNorthWindCoreUnitTest
             CollectionAssert.AreEqual(customersColumnNames.ToArray(), expected);
 
         }
-
 
     }
 

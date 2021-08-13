@@ -33,6 +33,7 @@ namespace SqlServerTablesColumns
 
         private void DataOperationsOnGeneratedHandler(string sender)
         {
+            // ReSharper disable once LocalizableElement
             textBox1.Text = textBox1.Text + $"{sender}{Environment.NewLine}";
             textBox1.Text = textBox1.Text.TrimStart();
         }

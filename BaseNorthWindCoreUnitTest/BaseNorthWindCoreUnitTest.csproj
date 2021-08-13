@@ -20,4 +20,10 @@
 	  <ProjectReference Include="..\BaseNorthWindCoreLibrary\BaseNorthWindCoreLibrary.csproj" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <None Update="products.json">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </None>
+	</ItemGroup>
+
 </Project>

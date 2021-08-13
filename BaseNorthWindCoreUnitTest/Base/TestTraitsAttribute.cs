@@ -13,7 +13,9 @@ namespace BaseNorthWindCoreUnitTest.Base
         PlaceHolder,
         EfCoreCustomersSelect,
         GroupingEntityFramework,
-        DbContextExtensions
+        DbContextExtensions,
+        SqlServerGroupingEntityFramework,
+        SqlServerDatesEntityFramework
     }
     /// <summary>
     /// Declarative class for using Trait enum about for traits on test method.

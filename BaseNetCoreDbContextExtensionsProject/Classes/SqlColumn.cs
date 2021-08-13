@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using Microsoft.EntityFrameworkCore.Metadata;
 
 namespace BaseNetCoreDbContextExtensionsProject.Classes
 {
@@ -29,6 +31,9 @@ namespace BaseNetCoreDbContextExtensionsProject.Classes
 
         public Type ClrType { get; internal set; }
         public string SqlType { get; internal set; }
+        public List<IColumnMapping> TableColumnMappings { get; set; }
+
+        public string DefaultValue { get; set; }    
 
         public override string ToString() => Name;
 

@@ -71,6 +71,12 @@ namespace BaseNorthWindCoreLibrary.Data
         /// <summary>
         /// Provides options for logging
         /// https://docs.microsoft.com/en-us/ef/core/logging-events-diagnostics/simple-logging
+        ///
+        /// ASP.NET Core Connection string
+        /// https://docs.microsoft.com/en-us/ef/core/miscellaneous/connection-strings#aspnet-core
+        ///
+        /// Configuring the database provider
+        /// https://docs.microsoft.com/en-us/ef/core/dbcontext-configuration/#configuring-the-database-provider
         /// </summary>
         /// <param name="optionsBuilder"></param>
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -115,6 +121,18 @@ namespace BaseNorthWindCoreLibrary.Data
         private static void NoLogging(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer(Helper.ConnectionString());
+        }
+
+        /// <summary>
+        /// Connection Resiliency
+        /// https://docs.microsoft.com/en-us/ef/core/miscellaneous/connection-resiliency
+        /// </summary>
+        /// <param name="optionsBuilder"></param>
+        private static void NoLoggingRetryOnFailure(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseSqlServer(
+                Helper.ConnectionString(), 
+                providerOptions => { providerOptions.EnableRetryOnFailure(); });
         }
         private static void CustomInterceptorNoLogging(DbContextOptionsBuilder optionsBuilder)
         {
