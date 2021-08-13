@@ -24,6 +24,8 @@ namespace BaseNorthWindCoreUnitTest
                 "City","CompanyName","ContactId","ContactTypeIdentifier","CountryIdentifier",
                 "CustomerIdentifier","Fax","ModifiedDate","Phone","PostalCode","Region","Street"
             };
+        
+        
 
         /// <summary>
         /// Perform any initialize for the class

@@ -73,6 +73,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseNetCoreDbContextExtensi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseNetCoreLanguageExtensionsProject", "BaseNetCoreLanguageExtensionsProject\BaseNetCoreLanguageExtensionsProject.csproj", "{2F8DD630-E64C-4264-BD09-E80CB5AC8186}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Utilities (not templates)", "Utilities (not templates)", "{92EB0465-9065-4CED-AEFB-1AE3553DB994}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqlServerTablesColumns", "SqlServerTablesColumns\SqlServerTablesColumns.csproj", "{358E2124-4272-4308-9B7A-9131B5D4F8C3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -163,6 +167,10 @@ Global
 		{2F8DD630-E64C-4264-BD09-E80CB5AC8186}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2F8DD630-E64C-4264-BD09-E80CB5AC8186}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2F8DD630-E64C-4264-BD09-E80CB5AC8186}.Release|Any CPU.Build.0 = Release|Any CPU
+		{358E2124-4272-4308-9B7A-9131B5D4F8C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{358E2124-4272-4308-9B7A-9131B5D4F8C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{358E2124-4272-4308-9B7A-9131B5D4F8C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{358E2124-4272-4308-9B7A-9131B5D4F8C3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -191,6 +199,7 @@ Global
 		{C124C98B-D2B5-42A3-B5E5-5EFAF5C80685} = {B9378777-D8B4-4466-98D0-DE4169C2679F}
 		{7BB6904A-8E71-43ED-A462-0ECE9606F2FA} = {2FAA48D6-24D0-44CA-97E4-207CF009CD04}
 		{2F8DD630-E64C-4264-BD09-E80CB5AC8186} = {2FAA48D6-24D0-44CA-97E4-207CF009CD04}
+		{358E2124-4272-4308-9B7A-9131B5D4F8C3} = {92EB0465-9065-4CED-AEFB-1AE3553DB994}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9ED3C544-A7B1-47DF-ACC1-EB578BCE69E4}
