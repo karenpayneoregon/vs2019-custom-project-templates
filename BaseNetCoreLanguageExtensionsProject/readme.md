@@ -1,6 +1,6 @@
 ﻿# About
 
-Base class project setup for C#9, .NET Core 5
+Common language extensions
 
 ![image](assets/Versions.png)
 

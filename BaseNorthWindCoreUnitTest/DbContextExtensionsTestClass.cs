@@ -25,13 +25,19 @@ namespace BaseNorthWindCoreUnitTest
         /// Test connection 
         /// </summary>
         [TestMethod]
+        [TestTraits(Trait.DbContextExtensions)]
         public async Task CanConnect()
         {
             await using var context = new NorthwindContext();
             Assert.IsTrue(await context.TestConnection());
         }
 
+        /// <summary>
+        /// Get all model names in DbContext
+        /// </summary>
+        /// <returns></returns>
         [TestMethod]
+        [TestTraits(Trait.DbContextExtensions)]
         public async Task GetModelNames()
         {
             var expected = ModelNames();
@@ -40,6 +46,27 @@ namespace BaseNorthWindCoreUnitTest
             var modelNames = context.GetModelNames().ToArray();
             CollectionAssert.AreEqual(modelNames,expected);
         }
+
+        /// <summary>
+        /// Get all columns for a specific model
+        /// </summary>
+        /// <returns></returns>
+        [TestMethod]
+        [TestTraits(Trait.DbContextExtensions)]
+        public async Task GetColumnNamesForTable()
+        {
+            var expected = CustomersColumnNames();
+            await using var context = new NorthwindContext();
+
+            var customersColumnNames = context
+                .GetEntityProperties("Customers")
+                .Select(sqlColumn => sqlColumn.Name)
+                .OrderBy(x => x);
+
+            CollectionAssert.AreEqual(customersColumnNames.ToArray(), expected);
+
+        }
+
 
     }
 
