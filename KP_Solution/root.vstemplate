@@ -1,0 +1,35 @@
+<VSTemplate Version="3.0.0" Type="ProjectGroup" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+    <TemplateData>
+        <Name>OED EF Core base solution</Name>
+        <Description>Base EF Core solution</Description>
+        <Icon>efcore.ico</Icon>
+        <ProjectType>CSharp</ProjectType>
+    </TemplateData>
+
+    <TemplateContent>
+
+        <ProjectCollection>
+
+            <SolutionFolder Name="Class projects">
+
+                <ProjectTemplateLink ProjectName="DataLibrary">
+                    DataLibrary\MyTemplate.vstemplate
+                </ProjectTemplateLink>
+
+                <ProjectTemplateLink ProjectName="ConfigurationHelper">
+                    ConfigurationHelper\MyTemplate.vstemplate
+                </ProjectTemplateLink>
+                
+            </SolutionFolder>
+
+            <SolutionFolder Name="Unit test projects">
+                <ProjectTemplateLink ProjectName="BaseUnitTestProject">
+                    BaseUnitTestProject\MyTemplate.vstemplate
+                </ProjectTemplateLink>
+            </SolutionFolder>
+
+
+        </ProjectCollection>
+
+    </TemplateContent>
+</VSTemplate>

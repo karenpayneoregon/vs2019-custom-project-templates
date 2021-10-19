@@ -1,0 +1,32 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>DataLibrary</Name>
+    <Description>Base EF Core class project</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>DataLibrary</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <CreateInPlace>true</CreateInPlace>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="DataLibrary.csproj" File="DataLibrary.csproj" ReplaceParameters="true">
+      <Folder Name="Classes" TargetFolderName="Classes">
+        <ProjectItem ReplaceParameters="true" TargetFileName="Operations.cs">Operations.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="TemplateContext.cs">TemplateContext.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Interfaces" TargetFolderName="Interfaces">
+        <ProjectItem ReplaceParameters="true" TargetFileName="IModelEntity.cs">IModelEntity.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ISoftDelete.cs">ISoftDelete.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Projections" TargetFolderName="Projections">
+        <ProjectItem ReplaceParameters="true" TargetFileName="PlaceHolder.txt">PlaceHolder.txt</ProjectItem>
+      </Folder>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

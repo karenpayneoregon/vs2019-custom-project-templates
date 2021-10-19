@@ -1,0 +1,38 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>ConfigurationHelper</Name>
+    <Description>Connection for appsettings.json</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>ConfigurationHelper</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <CreateInPlace>true</CreateInPlace>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="ConfigurationHelper.csproj" File="ConfigurationHelper.csproj" ReplaceParameters="true">
+      <Folder Name="assets" TargetFolderName="assets">
+        <ProjectItem ReplaceParameters="false" TargetFileName="core_csharp_shield.png">core_csharp_shield.png</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="Versions.png">Versions.png</ProjectItem>
+      </Folder>
+      <Folder Name="Classes" TargetFolderName="Classes">
+        <Folder Name="Containers" TargetFolderName="Containers">
+          <ProjectItem ReplaceParameters="true" TargetFileName="Environment.cs">Environment.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="Settings.cs">Settings.cs</ProjectItem>
+        </Folder>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ApplicationSettings.cs">ApplicationSettings.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ConnectionStrings.cs">ConnectionStrings.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="DatabaseSettings.cs">DatabaseSettings.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Environment.cs">Environment.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="GeneralSettings.cs">GeneralSettings.cs</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Helper.cs">Helper.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="readme.md">readme.md</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

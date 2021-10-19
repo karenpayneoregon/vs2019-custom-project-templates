@@ -69,13 +69,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Unit test projects", "Unit 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BaseNorthWindCoreUnitTest", "BaseNorthWindCoreUnitTest\BaseNorthWindCoreUnitTest.csproj", "{C124C98B-D2B5-42A3-B5E5-5EFAF5C80685}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseNetCoreDbContextExtensionsProject", "BaseNetCoreDbContextExtensionsProject\BaseNetCoreDbContextExtensionsProject.csproj", "{7BB6904A-8E71-43ED-A462-0ECE9606F2FA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BaseNetCoreDbContextExtensionsProject", "BaseNetCoreDbContextExtensionsProject\BaseNetCoreDbContextExtensionsProject.csproj", "{7BB6904A-8E71-43ED-A462-0ECE9606F2FA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseNetCoreLanguageExtensionsProject", "BaseNetCoreLanguageExtensionsProject\BaseNetCoreLanguageExtensionsProject.csproj", "{2F8DD630-E64C-4264-BD09-E80CB5AC8186}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BaseNetCoreLanguageExtensionsProject", "BaseNetCoreLanguageExtensionsProject\BaseNetCoreLanguageExtensionsProject.csproj", "{2F8DD630-E64C-4264-BD09-E80CB5AC8186}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Utilities (not templates)", "Utilities (not templates)", "{92EB0465-9065-4CED-AEFB-1AE3553DB994}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqlServerTablesColumns", "SqlServerTablesColumns\SqlServerTablesColumns.csproj", "{358E2124-4272-4308-9B7A-9131B5D4F8C3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SqlServerTablesColumns", "SqlServerTablesColumns\SqlServerTablesColumns.csproj", "{358E2124-4272-4308-9B7A-9131B5D4F8C3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solutions", "Solutions", "{479AD1E1-DF50-4DF5-BCAC-D6E8FAB27248}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
