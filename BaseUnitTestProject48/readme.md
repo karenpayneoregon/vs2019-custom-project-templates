@@ -2,9 +2,26 @@
 
 > If you are familar with unit test delete this file.
 
-- Base starter unit test project using .NET Core 5, C#9.
+- Base starter unit test project using .NET Framework 4.8.
 - This file may be deleted if there is no need for information provided.
   - The assert folder should be deleted if this file is deleted.
+
+# Post build event
+
+This is where checks can be done such as ensure a folder exists e.g. which is in the current post build event.
+
+```
+if not exist $(TargetDir)\JsonFiles mkdir $(TargetDir)\JsonFiles
+```
+
+Other ideas, copying files
+
+```
+if not exist $(TargetDir)\JsonFilesJsonFiles mkdir $(TargetDir)\JsonFiles
+xcopy "$(ProjectDir)\Json\*.json" "$(TargetDir)JsonFiles" /Y
+```
+
+
 # Microsoft documentation
 - [Unit test basics](https://docs.microsoft.com/en-us/visualstudio/test/unit-test-basics?view=vs-2019)
 - [Live Unit Testing](https://docs.microsoft.com/en-us/visualstudio/test/live-unit-testing-intro?view=vs-2019)

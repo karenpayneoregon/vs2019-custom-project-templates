@@ -3,12 +3,31 @@ using System.Collections.Generic;
 using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace PayneUnitTestProject.Base
+namespace BaseUnitTestProject48.Base
 {
-    
+
     public enum Trait
     {
+        /// <summary>
+        /// Place holder 
+        /// </summary>
         PlaceHolder,
+        /// <summary>
+        /// Entity Framework Core test
+        /// </summary>
+        EntityFrameworkCore,
+        /// <summary>
+        /// Configuration test
+        /// </summary>
+        Configurations,
+        /// <summary>
+        /// Controller test
+        /// </summary>
+        Controller,
+        /// <summary>
+        /// Service test
+        /// </summary>
+        Services
     }
     /// <summary>
     /// Declarative class for using Trait enum about for traits on test method.
