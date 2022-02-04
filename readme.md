@@ -1,4 +1,6 @@
-# Information
+# Custom Visual Studio 2019 project templates
+
+# About
 
 A repository for base projects for .NET 5, C#9 which can be exported as templates and used from Visual Studio `start window`.
 
