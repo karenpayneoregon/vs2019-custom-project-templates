@@ -83,7 +83,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Unit test project templates
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseUnitTestProject48", "BaseUnitTestProject48\BaseUnitTestProject48.csproj", "{FF803B98-39C5-45D9-A83A-425753255D6C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseCoreConsoleApp", "BaseCoreConsoleApp\BaseCoreConsoleApp.csproj", "{9371A1A3-82E5-4927-9F69-61BD38B485EB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BaseCoreConsoleApp", "BaseCoreConsoleApp\BaseCoreConsoleApp.csproj", "{9371A1A3-82E5-4927-9F69-61BD38B485EB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConfigurationLibrary", "ConfigurationLibrary\ConfigurationLibrary.csproj", "{D49FD22E-92E6-4CB8-BA07-7FC4B29B4BFD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -187,6 +189,10 @@ Global
 		{9371A1A3-82E5-4927-9F69-61BD38B485EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9371A1A3-82E5-4927-9F69-61BD38B485EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9371A1A3-82E5-4927-9F69-61BD38B485EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D49FD22E-92E6-4CB8-BA07-7FC4B29B4BFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D49FD22E-92E6-4CB8-BA07-7FC4B29B4BFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D49FD22E-92E6-4CB8-BA07-7FC4B29B4BFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D49FD22E-92E6-4CB8-BA07-7FC4B29B4BFD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -218,6 +224,7 @@ Global
 		{358E2124-4272-4308-9B7A-9131B5D4F8C3} = {92EB0465-9065-4CED-AEFB-1AE3553DB994}
 		{FF803B98-39C5-45D9-A83A-425753255D6C} = {D6505805-B427-464C-B994-E2837FB7F80D}
 		{9371A1A3-82E5-4927-9F69-61BD38B485EB} = {7865A25F-FC73-4912-A908-9F8F489AB358}
+		{D49FD22E-92E6-4CB8-BA07-7FC4B29B4BFD} = {2FAA48D6-24D0-44CA-97E4-207CF009CD04}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9ED3C544-A7B1-47DF-ACC1-EB578BCE69E4}
